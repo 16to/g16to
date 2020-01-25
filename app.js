@@ -5,7 +5,7 @@ const bodyparser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
 // node server port
-const PORT = 6000;
+const PORT = 5000;
 const app = express();
 const uploadRouter = require('./upload');
 app.use(bodyparser.json());
@@ -14,6 +14,9 @@ app.use(cookieParser());
 const httpServer = http.createServer(app);
 
 app.use('/upload', uploadRouter);
+
+// set dist
+app.use(express.static(path.join(__dirname, './')));
 
 // bind port
 httpServer.listen(PORT, () => {
