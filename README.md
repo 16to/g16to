@@ -2,7 +2,7 @@
 
 ## 启动
 ```sh 
-pm2 start app.js -n "g.16to.com"
+pm2 start app.js -n g16to
 ```
 
 ## 目录
@@ -12,4 +12,4 @@ js js文件
 upload 上传文件夹  
 
 ## 端口
-5000
+3003

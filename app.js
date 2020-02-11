@@ -5,7 +5,7 @@ const bodyparser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
 // node server port
-const PORT = 5000;
+const PORT = 3003;
 const app = express();
 const uploadRouter = require('./upload');
 app.use(bodyparser.json());
